@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+	<nav>
+		<ol>
+	        <li class="crumb"><a href="./home.html">Home</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
+	        <li class="crumb"><a href="./about.html">About</a></li>
+	    </ol>
+	</nav>
+
+	<content>
+		<h1>Welcome to this little website.</h1>
+		<p>Hello World</p>
+
+		<img src="https://t4.ftcdn.net/jpg/01/53/82/53/360_F_153825376_Xak5NaxMvITHrvewRU2Cz3VxmAU1tpqG.jpg">
+		<p>Thank you for checking us out and Welcome</p>
+
+		<ul>
+			<li>You are intelligent and quick-witted.</li>
+			<li>You have a great sense of humor and always know how to make others laugh.</li>
+			<li>You are kind, caring, and always willing to lend a helping hand.</li>
+		</ul>
+
+		<h2>Contact Us</h2>
+
+		<form action="submit-form.php" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+		  
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+		  
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+		  
+			<label for="hear-about">How did you hear about us?</label>
+			<ul>
+			  <li><input type="checkbox" id="google" name="hear-about[]" value="Google"><label for="google">Google</label></li>
+			  <li><input type="checkbox" id="friend" name="hear-about[]" value="A friend"><label for="friend">A friend</label></li>
+			  <li><input type="checkbox" id="other" name="hear-about[]" value="Other"><label for="other">Other</label></li>
+			</ul>
+		  
+			<button type="submit">Submit</button>
+		</form>
+
+		<form id="contact">
+			Your name:
+			<input type="text">
+
+			Message:
+			<input type="textarea">
+
+			<input type="submit">
+
+
+		</form>
+
+	</content>
+
+
+	<script src="about.js"></script>
+
+</body>
+</html>
